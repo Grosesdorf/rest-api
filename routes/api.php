@@ -22,7 +22,6 @@ Route::resource('users', 'Api\UserController')
     ->only(['index', 'show', 'store', 'destroy']);
 
 // GET /posts           | index
-// GET /posts/{user}    | show
 
 Route::resource('posts', 'Api\PostController')
     ->only(['index']);
